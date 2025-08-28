@@ -5,5 +5,6 @@
     <SectionDevExperience />
     <SectionHowShip />
     <SectionRunAnything />
+    <SectionTechYouLove />
   </div>
 </template>
