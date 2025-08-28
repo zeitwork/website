@@ -9,5 +9,7 @@
     <SectionArchitecture />
     <SectionBuiltForTeams />
     <SectionOpenSource />
+    <SectionMigration />
+    <SectionEarlyAccessProgram />
   </div>
 </template>

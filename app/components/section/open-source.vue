@@ -10,7 +10,12 @@
             Every component, from our control plane to our edge router, is available on GitHub.
           </d-description>
           <div>
-            <d-button size="sm">Explore on GitHub</d-button>
+            <d-button
+              size="sm"
+              variant="secondary"
+            >
+              Explore on GitHub
+            </d-button>
           </div>
         </d-title-container>
         <div class="grid gap-6 md:grid-cols-3">

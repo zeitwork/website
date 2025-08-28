@@ -7,8 +7,8 @@ type Props = {
 const { variant = "primary", size = "md" } = defineProps<Props>()
 
 const variantClasses = {
-  primary: "bg-neutral-900 text-white hover:bg-neutral-700",
-  secondary: "bg-neutral-subtle hover:bg-neutral-strong"
+  primary: "bg-surface-inverse text-neutral-onsurface hover:bg-surface-inverse-subtle",
+  secondary: "bg-surface-subtle hover:bg-neutral-strong text-neutral"
 }
 
 const sizeClasses = {
