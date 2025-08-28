@@ -4,5 +4,6 @@
     <SectionHero />
     <SectionDevExperience />
     <SectionHowShip />
+    <SectionRunAnything />
   </div>
 </template>
