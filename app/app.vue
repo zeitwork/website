@@ -6,5 +6,8 @@
     <SectionHowShip />
     <SectionRunAnything />
     <SectionTechYouLove />
+    <SectionArchitecture />
+    <SectionBuiltForTeams />
+    <SectionOpenSource />
   </div>
 </template>
