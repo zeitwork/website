@@ -1,26 +1,5 @@
 <script setup>
-useHead({
-  script: [
-    {
-      innerHTML: `
-        !(function () {
-          if (!window.UnicornStudio) {
-            window.UnicornStudio = { isInitialized: !1 };
-            var i = document.createElement("script");
-            ((i.src =
-              "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js"),
-              (i.onload = function () {
-                window.UnicornStudio.isInitialized ||
-                  (UnicornStudio.init(),
-                  (window.UnicornStudio.isInitialized = !0));
-              }),
-              (document.head || document.body).appendChild(i));
-          }
-        })();
-      `
-    }
-  ]
-})
+useUnicornStudio()
 </script>
 
 <template>
@@ -35,10 +14,11 @@ useHead({
           If it runs in a container, it runs on Zeitwork. Built on highly optimized microVMs,
           deployed on our metal, scaled automatically worldwide.
         </p>
-        <div class="flex items-center gap-2">
+        <d-waitlist-form />
+        <!-- <div class="flex items-center gap-2">
           <d-button>Get Early Access</d-button>
           <d-button variant="secondary">View on GitHub</d-button>
-        </div>
+        </div> -->
       </div>
       <div
         data-us-project="AwvRdOcGsL2B2n5Cake3"

@@ -211,12 +211,12 @@
   --ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-html,
+/* html,
 body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-}
+} */
 
 .dark {
   color-scheme: dark;

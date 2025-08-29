@@ -13,10 +13,17 @@
     "@heroicons/vue": "^2.2.0",
     "@nuxt/image": "1.11.0",
     "@tailwindcss/vite": "^4.1.12",
+    "date-fns": "^4.1.0",
+    "drizzle-orm": "^0.44.5",
     "nuxt": "^4.0.3",
+    "postgres": "^3.4.7",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.12",
+    "uuidv7": "^1.0.2",
     "vue": "^3.5.20",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4"
   }
 }
