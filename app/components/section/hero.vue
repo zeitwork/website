@@ -27,6 +27,7 @@ const { elementId, projectId } = useUnicornStudio("AwvRdOcGsL2B2n5Cake3")
       <div
         :id="elementId"
         :data-us-project="projectId"
+        data-us-production="true"
         class="absolute inset-0 h-full w-full"
       ></div>
     </d-wrapper>
