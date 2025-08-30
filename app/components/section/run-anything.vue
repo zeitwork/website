@@ -48,11 +48,15 @@ const cards = [
 const activeTab = ref(0)
 </script>
 <template>
-  <div class="bg-surface-weak py-32">
+  <div class="bg-surface-weak py-20 md:py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
         <d-title-container center>
-          <d-title>Run Anything. We Mean It.</d-title>
+          <d-title>
+            Run Anything.
+            <br class="md:hidden" />
+            We Mean It.
+          </d-title>
           <d-description>
             Not just functions. Not just serverless. Literally anything.
           </d-description>

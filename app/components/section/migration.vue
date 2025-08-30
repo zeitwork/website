@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-neutral py-32">
+  <div class="bg-neutral py-20 md:py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
         <d-title-container>

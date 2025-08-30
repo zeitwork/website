@@ -20,7 +20,7 @@ const tabs = [
 const activeTab = ref(0)
 </script>
 <template>
-  <div class="py-32">
+  <div class="py-20 md:py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
         <d-title-container center>
@@ -71,7 +71,7 @@ const activeTab = ref(0)
             </button>
           </div>
           <div
-            class="bg-surface-weak relative col-span-7 h-[400px] overflow-hidden rounded-xl select-none md:h-auto"
+            class="bg-surface-weak relative col-span-7 h-[280px] overflow-hidden rounded-xl select-none md:h-auto"
           >
             <div
               v-for="(tab, index) in tabs"

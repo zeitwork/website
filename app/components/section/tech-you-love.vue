@@ -57,7 +57,7 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="py-32">
+  <div class="py-20 md:py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
         <d-title-container center>

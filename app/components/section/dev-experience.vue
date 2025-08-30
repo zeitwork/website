@@ -1,5 +1,5 @@
 <template>
-  <div class="py-32">
+  <div class="py-20 md:py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
         <d-title-container center>
@@ -12,7 +12,7 @@
         </d-title-container>
         <div class="grid gap-6 md:grid-cols-6">
           <d-card class="md:col-span-3">
-            <div class="h-[180px]">
+            <div class="flex h-[180px]">
               <img
                 class="h-full w-full object-cover"
                 src="/illustration/01.png"
@@ -27,7 +27,7 @@
             </div>
           </d-card>
           <d-card class="md:col-span-3">
-            <div class="h-[180px]">
+            <div class="flex h-[180px] items-center">
               <img
                 src="/illustration/02.png"
                 alt="Deployments"

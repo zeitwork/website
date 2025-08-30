@@ -144,7 +144,7 @@
   --text-title: var(--text-4xl);
   --text-title--font-weight: 400;
 
-  --text-title-md: var(--text-2xl);
+  --text-title-md: var(--text-3xl);
   --text-title-md--font-weight: 400;
 
   --text-title-sm: var(--text-xl);
