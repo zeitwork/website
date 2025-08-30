@@ -2,12 +2,10 @@
   <div class="dark bg-neutral py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
-        <d-title-container>
+        <d-title-container center>
           <d-title>The Architecture Behind Your Apps</d-title>
           <d-description>
-            Build with your favorite framework. No Dockerfile? No problem: our CLI generates
-            containers for most popular frameworks, including Rails, Phoenix, Django, Node, Laravel,
-            and NET.
+            Enterprise-grade architecture, minus the enterprise-grade pain.
           </d-description>
         </d-title-container>
         <div class="grid gap-6 md:grid-cols-2">
@@ -42,8 +40,8 @@
                 </div>
               </div>
               <p class="text-coyp-lg text-neutral-subtle">
-                We offer multiple regions across the globe, ensuring direct peering with leading
-                ISPs. This setup guarantees low latency for your users.
+                We will offer multiple regions across the globe, ensuring direct peering with
+                leading ISPs. This setup guarantees low latency for your users.
               </p>
             </div>
           </d-card>
@@ -57,8 +55,8 @@
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Intelligent Auto-Scaling</p>
               <p class="text-coyp-lg text-neutral-subtle">
-                Automatic horizontal scaling, adjusting resources to meet demand seamlessly.
-                Predictive scaling leverages historical data to optimize resource allocation.
+                Seamless automatic horizontal scaling adjusts resources to meet demand. Always-on
+                instances ensure consistent performance.
               </p>
             </div>
           </d-card>

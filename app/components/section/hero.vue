@@ -11,7 +11,6 @@ const { elementId, projectId } = useUnicornStudio("AwvRdOcGsL2B2n5Cake3")
         </h1>
         <p class="text-copy-lg text-neutral">
           <span class="text-neutral">Deploy any application in seconds.</span>
-          <br />
           <span class="opacity-60">
             If it runs in a container, it runs on Zeitwork. Built on highly optimized microVMs,
             deployed on our metal, scaled automatically worldwide.

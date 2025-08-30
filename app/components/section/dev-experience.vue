@@ -2,7 +2,7 @@
   <div class="py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
-        <d-title-container>
+        <d-title-container center>
           <d-title>
             Developer experience
             <br />
@@ -34,9 +34,9 @@
               />
             </div>
             <div class="flex flex-col gap-2 p-6">
-              <p class="text-copy-lg text-neutral">No DevOps required.</p>
+              <p class="text-copy-lg text-neutral">Deploy from Git</p>
               <p class="text-coyp-lg text-neutral-subtle">
-                We handle SSL certificates, and scaling. You just push code.
+                Simply push and enjoy branch previews, rollbacks and deployment history.
               </p>
             </div>
           </d-card>
@@ -48,9 +48,9 @@
               />
             </div>
             <div class="flex flex-col gap-2 p-6">
-              <p class="text-copy-lg text-neutral">No DevOps required.</p>
+              <p class="text-copy-lg text-neutral">Zero configuration</p>
               <p class="text-coyp-lg text-neutral-subtle">
-                We handle SSL certificates, and scaling. You just push code.
+                We detect your framework and build it automatically.
               </p>
             </div>
           </d-card>
@@ -62,9 +62,9 @@
               />
             </div>
             <div class="flex flex-col gap-2 p-6">
-              <p class="text-copy-lg text-neutral">No DevOps required.</p>
+              <p class="text-copy-lg text-neutral">Auto Scaling</p>
               <p class="text-coyp-lg text-neutral-subtle">
-                We handle SSL certificates, and scaling. You just push code.
+                Handle traffic spikes without manual intervention.
               </p>
             </div>
           </d-card>
@@ -76,9 +76,9 @@
               />
             </div>
             <div class="flex flex-col gap-2 p-6">
-              <p class="text-copy-lg text-neutral">No DevOps required.</p>
+              <p class="text-copy-lg text-neutral">Full application support</p>
               <p class="text-coyp-lg text-neutral-subtle">
-                We handle SSL certificates, and scaling. You just push code.
+                Long-running processes, background jobs, WebSockets.
               </p>
             </div>
           </d-card>

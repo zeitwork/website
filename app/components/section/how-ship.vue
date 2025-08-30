@@ -3,7 +3,7 @@ const tabs = [
   {
     title: "Connect your repository",
     description:
-      "Link your GitHub repo with a single command. We'll detect your framework automatically."
+      "Link your GitHub repo with a single click. We'll detect your framework automatically."
   },
   {
     title: "Push your code",
@@ -23,7 +23,7 @@ const activeTab = ref(0)
   <div class="py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
-        <d-title-container>
+        <d-title-container center>
           <d-title>How Developers Ship on Zeitwork</d-title>
           <d-description>
             No Dockerfiles to write. No Kubernetes to learn. No infrastructure to manage.
@@ -71,7 +71,7 @@ const activeTab = ref(0)
             </button>
           </div>
           <div
-            class="bg-surface-weak relative col-span-7 h-[400px] overflow-hidden rounded-xl md:h-auto"
+            class="bg-surface-weak relative col-span-7 h-[400px] overflow-hidden rounded-xl select-none md:h-auto"
           >
             <div
               v-for="(tab, index) in tabs"

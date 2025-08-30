@@ -22,7 +22,7 @@ const cards = [
   },
   {
     icon: BoltIcon,
-    title: "Real-Time & Persistent Connections",
+    title: "Real-Time & Sticky Sessions",
     description: "WebSockets, gRPC, game backends. Connections that last hours, not milliseconds."
   },
   {
@@ -51,9 +51,11 @@ const activeTab = ref(0)
   <div class="bg-surface-weak py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
-        <d-title-container>
+        <d-title-container center>
           <d-title>Run Anything. We Mean It.</d-title>
-          <d-description>No infrastructure expertise required.</d-description>
+          <d-description>
+            Not just functions. Not just serverless. Literally anything.
+          </d-description>
         </d-title-container>
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div

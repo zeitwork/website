@@ -60,12 +60,11 @@ onMounted(() => {
   <div class="py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
-        <d-title-container>
+        <d-title-container center>
           <d-title>Use the Tech You Love</d-title>
           <d-description>
-            Build with your favorite framework. No Dockerfile? No problem: our CLI generates
-            containers for most popular frameworks, including Rails, Phoenix, Django, Node, Laravel,
-            and NET.
+            Build with your favorite framework. No Dockerfile? No problem! We generate containers
+            for most popular frameworks, including Rails, Phoenix, Django, Node, Laravel, and NET.
           </d-description>
         </d-title-container>
       </div>

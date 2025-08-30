@@ -2,18 +2,19 @@
   <div class="dark bg-neutral py-32">
     <d-wrapper>
       <div class="flex flex-col gap-16">
-        <d-title-container :center="false">
+        <d-title-container>
           <d-title>Open Source to the Core</d-title>
           <d-description>
-            Zeitwork isn't just "open source friendly", we're radically transparent.
-            <br />
-            Every component, from our control plane to our edge router, is available on GitHub.
+            Zeitwork isn't just "open source friendly", we're radically transparent. Every
+            component, from our control plane to our edge router, is available on GitHub.
           </d-description>
           <div>
             <d-button
               class="mt-4"
               size="sm"
               variant="secondary"
+              to="https://github.com/zeitwork/zeitwork"
+              target="_blank"
             >
               Explore on GitHub
             </d-button>
