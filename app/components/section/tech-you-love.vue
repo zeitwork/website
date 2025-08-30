@@ -1,13 +1,34 @@
 <script setup lang="ts">
-const tech = ["golang", "nuxt", "next", "rails"]
+const tech = [
+  "c-sharp.png",
+  "clojure.png",
+  "cpp.png",
+  "django.png",
+  "elixir.png",
+  "erlang.png",
+  "golang.png",
+  "haskell.png",
+  "java.png",
+  "kotlin.png",
+  "laravel.png",
+  "next.png",
+  "node.png",
+  "nuxt.png",
+  "perl.png",
+  "python.png",
+  "rails.png",
+  "rust.png",
+  "scala.png",
+  "swift.png"
+]
 const marqueeRef = ref()
 
 const config = {
-  minScale: 0.5,
+  minScale: 0.2,
   maxScale: 1.0,
   minOpacity: 0.4,
   maxOpacity: 1.0,
-  speed: 40
+  speed: 60
 }
 
 function updateScales() {
@@ -60,25 +81,14 @@ onMounted(() => {
         :style="`--speed: ${config.speed}s`"
       >
         <div
-          v-for="(item, index) in [...tech, ...tech, ...tech, ...tech, ...tech, ...tech]"
+          v-for="(item, index) in [...tech, ...tech, ...tech, ...tech]"
           :key="`${item}-${index}`"
-          class="logo mr-16 flex h-20 w-20 flex-shrink-0 items-center justify-center"
+          class="logo mr-6 flex h-20 w-20 flex-shrink-0 items-center justify-center"
         >
           <img
-            :src="`illustration/tech/${item}.png`"
+            :src="`illustration/tech/${item}`"
             :alt="`${item} logo`"
-            class="h-full w-full object-contain"
-          />
-        </div>
-        <div
-          v-for="(item, index) in [...tech, ...tech, ...tech, ...tech, ...tech, ...tech]"
-          :key="`duplicate-${item}-${index}`"
-          class="logo mr-16 flex h-20 w-20 flex-shrink-0 items-center justify-center"
-        >
-          <img
-            :src="`illustration/tech/${item}.png`"
-            :alt="`${item} logo`"
-            class="h-full w-full object-contain"
+            class="h-full w-full rounded-2xl object-contain"
           />
         </div>
       </div>

@@ -13,7 +13,7 @@
 
   /* Background colors */
   /* bg-neutral-[subtle, strong, inverse] */
-  --background-color-neutral: light-dark(#fcfcfc, var(--color-neutral-950));
+  --background-color-neutral: light-dark(#ffffff, var(--color-neutral-950));
   --background-color-neutral-subtle: light-dark(#f8f8f8, var(--color-neutral-900));
   --background-color-neutral-strong: light-dark(#f3f3f3, var(--color-neutral-800));
   --background-color-neutral-inverse: light-dark(
@@ -220,4 +220,19 @@ body {
 
 .dark {
   color-scheme: dark;
+}
+
+.fade-up-enter-active,
+.fade-up-leave-active {
+  transition: all 500ms var(--ease-out-expo);
+  transform: translateY(0%);
+}
+
+.fade-up-enter-from {
+  opacity: 0;
+  transform: translateY(20%);
+}
+.fade-up-leave-to {
+  opacity: 0;
+  transform: translateY(-20%);
 }

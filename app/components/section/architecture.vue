@@ -22,8 +22,8 @@
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Highly Optimized MicroVMs</p>
               <p class="text-coyp-lg text-neutral-subtle">
-                Always operational with no cold starts, featuring hardware-level isolation and
-                memory-safe virtualization, all while utilizing appropriately sized resources.
+                Always operational with no cold starts. Featuring hardware-level isolation and
+                memory-safe virtualization.
               </p>
             </div>
           </d-card>
@@ -35,11 +35,15 @@
               />
             </div>
             <div class="flex flex-col gap-2 p-6">
-              <p class="text-copy-lg text-neutral">Global Metal Fleet</p>
+              <div class="flex items-center gap-2">
+                <p class="text-copy-lg text-neutral">Global Metal Fleet</p>
+                <div class="bg-surface text-neutral-subtle inline-flex rounded-full px-2">
+                  Coming soon
+                </div>
+              </div>
               <p class="text-coyp-lg text-neutral-subtle">
                 We offer multiple regions across the globe, ensuring direct peering with leading
-                ISPs. This setup guarantees low latency for your users, all powered by 100%
-                renewable energy.
+                ISPs. This setup guarantees low latency for your users.
               </p>
             </div>
           </d-card>
@@ -53,10 +57,8 @@
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Intelligent Auto-Scaling</p>
               <p class="text-coyp-lg text-neutral-subtle">
-                Automatic horizontal scaling, adjusting resources to meet demand seamlessly. With
-                always-on instances, you can rely on consistent performance. Predictive scaling
-                leverages historical data to optimize resource allocation, eliminating manual
-                adjustments.
+                Automatic horizontal scaling, adjusting resources to meet demand seamlessly.
+                Predictive scaling leverages historical data to optimize resource allocation.
               </p>
             </div>
           </d-card>
@@ -70,9 +72,8 @@
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Edge-Native Networking</p>
               <p class="text-coyp-lg text-neutral-subtle">
-                We provide Anycast routing for efficient traffic management, along with automatic
-                failover to maintain service continuity. Built-in DDoS protection safeguards your
-                applications, and we offer free SSL certificates to enhance security.
+                We provide smart routing for efficient traffic management, along with automatic
+                failover to maintain service continuity.
               </p>
             </div>
           </d-card>

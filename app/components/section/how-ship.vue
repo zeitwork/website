@@ -31,7 +31,7 @@ const activeTab = ref(0)
             Just push code and let us handle the rest.
           </d-description>
         </d-title-container>
-        <div class="grid gap-6 md:grid-cols-12">
+        <div class="flex flex-col-reverse gap-6 md:grid md:grid-cols-12">
           <div class="col-span-5 flex flex-col gap-4">
             <button
               @click="activeTab = index"
@@ -70,7 +70,9 @@ const activeTab = ref(0)
               </div>
             </button>
           </div>
-          <div class="bg-surface-weak relative col-span-7 overflow-hidden rounded-xl">
+          <div
+            class="bg-surface-weak relative col-span-7 h-[400px] overflow-hidden rounded-xl md:h-auto"
+          >
             <div
               v-for="(tab, index) in tabs"
               class="ease-out-expo absolute inset-6 transition-all duration-500"
@@ -83,7 +85,7 @@ const activeTab = ref(0)
               <img
                 class="size-full object-contain"
                 :src="`/illustration/how-use/0${index + 1}.png`"
-                :alt="tabs[activeTab].title"
+                :alt="tabs[activeTab]?.title"
               />
             </div>
           </div>

@@ -11,6 +11,7 @@
           </d-description>
           <div>
             <d-button
+              class="mt-4"
               size="sm"
               variant="secondary"
             >
@@ -20,6 +21,13 @@
         </d-title-container>
         <div class="grid gap-6 md:grid-cols-3">
           <d-card>
+            <div class="h-[180px]">
+              <img
+                class="h-full w-full object-cover"
+                src="/illustration/open-source/01.png"
+                alt="Shield"
+              />
+            </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Run Your Own Zeitwork</p>
               <p class="text-coyp-lg text-neutral-subtle">
@@ -29,6 +37,13 @@
             </div>
           </d-card>
           <d-card>
+            <div class="h-[180px]">
+              <img
+                class="h-full w-full object-cover"
+                src="/illustration/open-source/02.png"
+                alt="Shield"
+              />
+            </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Contribute & Shape the Future</p>
               <p class="text-coyp-lg text-neutral-subtle">
@@ -38,6 +53,13 @@
             </div>
           </d-card>
           <d-card>
+            <div class="h-[180px]">
+              <img
+                class="h-full w-full object-cover"
+                src="/illustration/open-source/03.png"
+                alt="Shield"
+              />
+            </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">No Vendor Lock-In</p>
               <p class="text-coyp-lg text-neutral-subtle">

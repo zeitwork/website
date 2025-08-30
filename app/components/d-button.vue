@@ -18,7 +18,7 @@ const sizeClasses = {
 </script>
 <template>
   <button
-    class="text-copy-lg flex cursor-pointer items-center rounded-full"
+    class="text-copy-lg flex cursor-pointer items-center rounded-full ring-offset-2 transition-all outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
     :class="[variantClasses[variant], sizeClasses[size]]"
   >
     <slot />
