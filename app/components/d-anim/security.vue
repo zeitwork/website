@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const spread = ref(25)
-const lowDuration = ref(1200)
-const highDuration = ref(2500)
+const spread = ref(22)
+const lowDuration = ref(1000)
+const highDuration = ref(1200)
 
 function getRandomValue(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min
@@ -10,7 +10,7 @@ function getRandomValue(min: number, max: number): number {
 <template>
   <div class="relative h-full w-full">
     <svg
-      class="animate-shield-scale absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2"
+      class="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2"
       width="104"
       height="125"
       viewBox="0 0 104 125"
@@ -35,15 +35,18 @@ function getRandomValue(min: number, max: number): number {
         />
       </g>
       <path
+        class="animate-shield-scale origin-center"
         d="M47.166 16.8408C49.9183 14.3861 54.0817 14.3861 56.834 16.8408C67.7022 26.5347 81.447 33.0668 96.6279 35.0117C100.152 35.4632 102.832 38.3952 102.95 41.9404C102.983 42.9304 103 43.9244 103 44.9219C103 78.9615 83.6493 108.484 55.3496 123.183C53.2505 124.273 50.7495 124.273 48.6504 123.183C20.3507 108.484 1 78.9615 1 44.9219C1 43.9244 1.01676 42.9304 1.0498 41.9404C1.16822 38.3952 3.84832 35.4632 7.37207 35.0117C22.553 33.0668 36.2978 26.5347 47.166 16.8408Z"
         fill="#F5F5F5"
       />
       <path
+        class="animate-shield-scale origin-center"
         d="M47.166 16.8408C49.9183 14.3861 54.0817 14.3861 56.834 16.8408C67.7022 26.5347 81.447 33.0668 96.6279 35.0117C100.152 35.4632 102.832 38.3952 102.95 41.9404C102.983 42.9304 103 43.9244 103 44.9219C103 78.9615 83.6493 108.484 55.3496 123.183C53.2505 124.273 50.7495 124.273 48.6504 123.183C20.3507 108.484 1 78.9615 1 44.9219C1 43.9244 1.01676 42.9304 1.0498 41.9404C1.16822 38.3952 3.84832 35.4632 7.37207 35.0117C22.553 33.0668 36.2978 26.5347 47.166 16.8408Z"
         fill="url(#pattern0_712_18644)"
         fill-opacity="0.2"
       />
       <path
+        class="animate-shield-scale origin-center"
         d="M47.166 16.8408C49.9183 14.3861 54.0817 14.3861 56.834 16.8408C67.7022 26.5347 81.447 33.0668 96.6279 35.0117C100.152 35.4632 102.832 38.3952 102.95 41.9404C102.983 42.9304 103 43.9244 103 44.9219C103 78.9615 83.6493 108.484 55.3496 123.183C53.2505 124.273 50.7495 124.273 48.6504 123.183C20.3507 108.484 1 78.9615 1 44.9219C1 43.9244 1.01676 42.9304 1.0498 41.9404C1.16822 38.3952 3.84832 35.4632 7.37207 35.0117C22.553 33.0668 36.2978 26.5347 47.166 16.8408Z"
         stroke="#E5E5E5"
         stroke-width="2"
@@ -115,6 +118,7 @@ function getRandomValue(min: number, max: number): number {
 @keyframes shield-stack {
   0% {
     transform: scale(calc(1 - var(--index) * 0.08)) translateY(calc(var(--index) * -13px));
+    opacity: calc(1 - var(--index) * 0.3);
   }
   100% {
     transform: scale(calc(1 - (var(--index) + 1) * 0.08))
@@ -131,7 +135,7 @@ function getRandomValue(min: number, max: number): number {
   0% {
     transform: scale(1);
   }
-  40% {
+  45% {
     transform: scale(1);
   }
   50% {
@@ -144,6 +148,6 @@ function getRandomValue(min: number, max: number): number {
 
 .animate-shield-scale {
   animation: shield-scale 2000ms var(--ease-out-expo) infinite;
-  animation-delay: 1000ms;
+  animation-delay: 1100ms;
 }
 </style>

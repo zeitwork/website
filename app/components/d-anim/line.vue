@@ -7,7 +7,7 @@ type Props = {
   chance?: number
 }
 
-const { duration = 2000, height = 80, chance = 0.2 } = defineProps<Props>()
+const { duration = 2000, height = 80, chance = 0.1 } = defineProps<Props>()
 
 const line = ref(null)
 let drawable: any = null
