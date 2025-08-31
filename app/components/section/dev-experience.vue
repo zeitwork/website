@@ -61,11 +61,8 @@
             </div>
           </d-card>
           <d-card class="md:col-span-2">
-            <div class="h-[180px]">
-              <img
-                src="/illustration/05.png"
-                alt="Application Support"
-              />
+            <div class="flex h-[180px] items-center">
+              <DAnimFrameworks class="h-full w-full" />
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Full application support</p>
