@@ -96,7 +96,7 @@ onMounted(() => {
     <DAnimDeployCard
       v-for="(card, i) in cards"
       :key="card.id"
-      class="ease-out-expo absolute top-1/2 origin-top-left transition-all duration-700"
+      class="ease-out-expo absolute top-1/2 left-0 origin-top-left transition-all duration-700"
       :id="card.id"
       :commit="card.commit"
       :commit-message="card.commitMessage"
