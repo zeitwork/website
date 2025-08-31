@@ -8,6 +8,7 @@
         "@nuxt/image": "1.11.0",
         "@tailwindcss/vite": "^4.1.12",
         "@vueuse/core": "^13.8.0",
+        "animejs": "^4.1.3",
         "date-fns": "^4.1.0",
         "drizzle-orm": "^0.44.5",
         "nuxt": "^4.0.3",
@@ -557,6 +558,8 @@
     "agent-base": ["agent-base@7.1.4", "", {}, "sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ=="],
 
     "alien-signals": ["alien-signals@2.0.7", "", {}, "sha512-wE7y3jmYeb0+h6mr5BOovuqhFv22O/MV9j5p0ndJsa7z1zJNPGQ4ph5pQk/kTTCWRC3xsA4SmtwmkzQO+7NCNg=="],
+
+    "animejs": ["animejs@4.1.3", "", {}, "sha512-4XzlIsQsku1ycSPzchxxT0N+ohEMZObG71nOSBBkZoV4sgQvtXa/qAANkFpTE6pegdV8JnIBZiB0LfdxNoRNMw=="],
 
     "ansi-regex": ["ansi-regex@6.2.0", "", {}, "sha512-TKY5pyBkHyADOPYlRT9Lx6F544mPl0vS5Ew7BJ45hA08Q+t3GjbueLliBWN3sMICk6+y7HdyxSzC4bWS8baBdg=="],
 

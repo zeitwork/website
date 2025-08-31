@@ -12,12 +12,13 @@
         </d-title-container>
         <div class="grid gap-6 md:grid-cols-6">
           <d-card class="md:col-span-3">
-            <div class="flex h-[180px]">
-              <img
+            <div class="flex h-[180px] overflow-hidden">
+              <DAnimSecurity class="h-full w-full" />
+              <!-- <img
                 class="h-full w-full object-cover"
                 src="/illustration/01.png"
                 alt="Shield"
-              />
+              /> -->
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">No DevOps required.</p>
