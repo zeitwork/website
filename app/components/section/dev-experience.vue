@@ -25,10 +25,6 @@
           <d-card class="md:col-span-3">
             <div class="flex h-[180px] items-center">
               <DAnimDeploy class="h-full w-full" />
-              <!-- <img
-                src="/illustration/02.png"
-                alt="Deployments"
-              /> -->
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Deploy from Git</p>
@@ -39,10 +35,9 @@
           </d-card>
           <d-card class="md:col-span-2">
             <div class="h-[180px]">
-              <img
-                src="/illustration/03.png"
-                alt="Detecting Setup"
-              />
+              <div class="flex h-[180px] items-center">
+                <DAnimDetect class="h-full w-full" />
+              </div>
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Zero configuration</p>
