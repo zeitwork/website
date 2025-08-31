@@ -73,7 +73,7 @@ onMounted(() => {
         ref="line"
         id="path-top"
         :d="pathD"
-        stroke="green"
+        stroke="trasparent"
         stroke-width="4"
       />
     </g>
