@@ -50,7 +50,7 @@ function head() {
       },
 
       // OpenGraph
-      { property: "og:title", content: "Zeitword" },
+      { property: "og:title", content: "Zeitwork" },
       {
         property: "og:description",
         content:
