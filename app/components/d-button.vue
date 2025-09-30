@@ -27,7 +27,7 @@ const comp = computed(() => {
   <component
     :is="comp"
     :to="to"
-    class="text-copy-lg inline-flex cursor-pointer items-center rounded-full ring-offset-2 transition-all outline-none select-none focus-visible:ring-2 focus-visible:ring-blue-600"
+    class="text-copy-lg inline-flex cursor-pointer items-center rounded-full whitespace-nowrap ring-offset-2 transition-all outline-none select-none focus-visible:ring-2 focus-visible:ring-blue-600"
     :class="[variantClasses[variant], sizeClasses[size]]"
   >
     <slot />

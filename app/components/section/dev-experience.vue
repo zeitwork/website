@@ -12,12 +12,8 @@
         </d-title-container>
         <div class="grid gap-6 md:grid-cols-6">
           <d-card class="md:col-span-3">
-            <div class="flex h-[180px]">
-              <img
-                class="h-full w-full object-cover"
-                src="/illustration/01.png"
-                alt="Shield"
-              />
+            <div class="flex h-[180px] overflow-hidden">
+              <DAnimSecurity class="h-full w-full" />
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">No DevOps required.</p>
@@ -28,10 +24,7 @@
           </d-card>
           <d-card class="md:col-span-3">
             <div class="flex h-[180px] items-center">
-              <img
-                src="/illustration/02.png"
-                alt="Deployments"
-              />
+              <DAnimDeploy class="h-full w-full" />
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Deploy from Git</p>
@@ -42,10 +35,9 @@
           </d-card>
           <d-card class="md:col-span-2">
             <div class="h-[180px]">
-              <img
-                src="/illustration/03.png"
-                alt="Detecting Setup"
-              />
+              <div class="flex h-[180px] items-center">
+                <DAnimDetect class="h-full w-full" />
+              </div>
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Zero configuration</p>
@@ -56,10 +48,9 @@
           </d-card>
           <d-card class="md:col-span-2">
             <div class="h-[180px]">
-              <img
-                src="/illustration/04.png"
-                alt="Auto Scaling"
-              />
+              <div class="flex h-[180px] items-center">
+                <DAnimAutoScale class="h-full w-full" />
+              </div>
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Auto Scaling</p>
@@ -69,11 +60,8 @@
             </div>
           </d-card>
           <d-card class="md:col-span-2">
-            <div class="h-[180px]">
-              <img
-                src="/illustration/05.png"
-                alt="Application Support"
-              />
+            <div class="flex h-[180px] items-center">
+              <DAnimFrameworks class="h-full w-full" />
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Full application support</p>

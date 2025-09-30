@@ -16,7 +16,7 @@ const { elementId, projectId } = useUnicornStudio("AwvRdOcGsL2B2n5Cake3")
             deployed on our metal, scaled automatically worldwide.
           </span>
         </p>
-        <div>
+        <div class="w-full">
           <d-waitlist-form />
         </div>
         <!-- <div class="flex items-center gap-2">

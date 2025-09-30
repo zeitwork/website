@@ -12,7 +12,7 @@ const { elementId, projectId } = useUnicornStudio("xMPzWbUJSJQq7Nfyb3Cu")
             Stop wrestling with infrastructure. Stop overpaying for cloud. Start building.
           </p>
         </div>
-        <div>
+        <div class="w-full">
           <d-waitlist-form center />
         </div>
       </div>

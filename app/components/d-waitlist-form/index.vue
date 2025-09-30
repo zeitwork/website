@@ -48,10 +48,10 @@ async function handleSubmit() {
 <template>
   <form
     @submit.prevent="handleSubmit"
-    class="flex w-full flex-col gap-2"
+    class="flex flex-col gap-2 sm:inline-flex"
   >
     <div
-      class="inline-flex gap-2 rounded-full bg-white/10 p-1 ring-[4px] ring-black/[0.02] backdrop-blur transition-all hover:bg-white/30 hover:ring-black/[0.04] has-focus-visible:bg-white/50 has-focus-visible:ring-[6px] has-focus-visible:ring-black/[0.06]"
+      class="flex gap-2 rounded-full bg-white/10 p-1 ring-[4px] ring-black/[0.02] backdrop-blur transition-all hover:bg-white/30 hover:ring-black/[0.04] has-focus-visible:bg-white/50 has-focus-visible:ring-[6px] has-focus-visible:ring-black/[0.06] sm:inline-flex"
     >
       <input
         id="email"
@@ -59,7 +59,7 @@ async function handleSubmit() {
         autocomplete="email"
         type="email"
         placeholder="Your Email"
-        class="text-copy-lg text-neutral flex items-center rounded-full px-5 py-1.5 focus:outline-none"
+        class="text-copy-lg text-neutral flex min-w-0 flex-1 items-center rounded-full px-5 py-1.5 focus:outline-none"
       />
       <d-button
         type="submit"
