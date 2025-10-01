@@ -19,12 +19,17 @@ const isScrolled = computed(() => y.value > 20)
             : 'max-w-4xl border-transparent bg-white/50 backdrop-blur-xl md:bg-white/0 md:backdrop-blur-none'
         ]"
       >
-        <NuxtLink
-          to="/"
-          class="p-2"
-        >
-          <d-logo class="text-black" />
-        </NuxtLink>
+        <div class="flex flex-1 items-center gap-2">
+          <NuxtLink
+            to="/"
+            class="p-2"
+          >
+            <d-logo class="text-black" />
+          </NuxtLink>
+          <nav class="flex items-center gap-2">
+            <PageNavigationLink to="/pricing">Pricing</PageNavigationLink>
+          </nav>
+        </div>
 
         <div class="flex items-center gap-1">
           <NuxtLink
