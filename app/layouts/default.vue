@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-stone-50">
     <PageNavigation />
     <slot></slot>
     <PageFooter />

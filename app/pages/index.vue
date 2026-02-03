@@ -15,16 +15,12 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="bg-stone-50 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)]">
     <NuxtRouteAnnouncer />
-    <SectionHero />
-    <SectionDevExperience />
-    <SectionHowShip />
-    <SectionRunAnything />
-    <SectionTechYouLove />
-    <SectionArchitecture />
-    <SectionBuiltForTeams />
-    <SectionOpenSource />
-    <SectionCta />
+    <LandingHero />
+    <LandingPainPoint />
+    <LandingFeatures />
+    <LandingWhyZeitwork />
+    <LandingCta />
   </div>
 </template>
