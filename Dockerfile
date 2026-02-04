@@ -1,7 +1,12 @@
-ARG BUN_VERSION=1
+ARG NODE_VERSION=24-alpine
 
-FROM oven/bun:${BUN_VERSION} AS base
+FROM node:${NODE_VERSION} AS base
 WORKDIR /usr/src/app
+
+# Install Bun
+RUN apk add --no-cache bash curl unzip && \
+    curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:${PATH}"
 
 # Install dependencies (cached layer)
 FROM base AS install
@@ -13,15 +18,13 @@ RUN cd /temp/dev && bun install --frozen-lockfile
 FROM base AS prerelease
 COPY --from=install /temp/dev/node_modules node_modules
 COPY . .
-
-# Set Bun preset for Nitro at build time
-ENV NITRO_PRESET=bun
 RUN bun run build
 
-# Production image
-FROM base AS release
+# Production image (Node only, no Bun needed at runtime)
+FROM node:${NODE_VERSION} AS release
+WORKDIR /usr/src/app
 COPY --from=prerelease /usr/src/app/.output .output
 COPY --from=prerelease /usr/src/app/package.json .
 
 EXPOSE 3000
-CMD ["bun", "run", ".output/server/index.mjs"]
+CMD ["node", ".output/server/index.mjs"]
