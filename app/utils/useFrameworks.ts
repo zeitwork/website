@@ -19,18 +19,18 @@ export const useFrameworks = () => {
     "rails.png",
     "rust.png",
     "scala.png",
-    "swift.png"
-  ]
+    "swift.png",
+  ];
 
-  const getFrameworkPath = (filename: string) => `/illustration/tech/${filename}`
+  const getFrameworkPath = (filename: string) => `/illustration/tech/${filename}`;
 
   const getFrameworkName = (filename: string) => {
-    return filename.replace(".png", "").replace("-", " ")
-  }
+    return filename.replace(".png", "").replace("-", " ");
+  };
 
   return {
     frameworks,
     getFrameworkPath,
-    getFrameworkName
-  }
-}
+    getFrameworkName,
+  };
+};

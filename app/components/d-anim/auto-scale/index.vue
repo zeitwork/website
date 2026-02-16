@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { animate } from "animejs"
+import { animate } from "animejs";
 
-const state = ref(0)
-const spacing = ref(60)
-const node1Height = ref(20)
-const node2Height = ref(20)
+const state = ref(0);
+const spacing = ref(60);
+const node1Height = ref(20);
+const node2Height = ref(20);
 
 onMounted(() => {
-  const duration = 5000
+  const duration = 5000;
 
   animate(node1Height, {
     keyframes: {
@@ -15,12 +15,12 @@ onMounted(() => {
       "20%": { value: 80, ease: "outQuad" },
       "35%": { value: 60, ease: "inOutQuad" },
       "70%": { value: 20, ease: "inQuad" },
-      "100%": { value: 20 }
+      "100%": { value: 20 },
     },
     duration,
     loop: true,
-    autoplay: true
-  })
+    autoplay: true,
+  });
 
   animate(node2Height, {
     keyframes: {
@@ -28,12 +28,12 @@ onMounted(() => {
       "20%": { value: 20 },
       "35%": { value: 40, ease: "inOutQuad" },
       "70%": { value: 20, ease: "inQuad" },
-      "100%": { value: 20 }
+      "100%": { value: 20 },
     },
     duration,
     loop: true,
-    autoplay: true
-  })
+    autoplay: true,
+  });
 
   animate(state, {
     keyframes: {
@@ -42,14 +42,14 @@ onMounted(() => {
       "20.1%": { value: 1 },
       "70%": { value: 1 },
       "70.1%": { value: 0 },
-      "100%": { value: 0 }
+      "100%": { value: 0 },
     },
     duration,
     loop: true,
     autoplay: true,
-    ease: "linear"
-  })
-})
+    ease: "linear",
+  });
+});
 </script>
 
 <template>

@@ -1,46 +1,46 @@
 <script setup lang="ts">
-import { Loader2, Check } from "lucide-vue-next"
+import { Loader2, Check } from "lucide-vue-next";
 
-const isDetecting = ref(false)
-const detectionComplete = ref(false)
-const isPressed = ref(false)
+const isDetecting = ref(false);
+const detectionComplete = ref(false);
+const isPressed = ref(false);
 
 function startDetection() {
-  if (isDetecting.value) return
+  if (isDetecting.value) return;
 
   // Quick press animation
-  isPressed.value = true
+  isPressed.value = true;
   setTimeout(() => {
-    isPressed.value = false
-  }, 150)
+    isPressed.value = false;
+  }, 150);
 
   // Start detection after press animation
   setTimeout(() => {
-    isDetecting.value = true
-    detectionComplete.value = false
+    isDetecting.value = true;
+    detectionComplete.value = false;
 
     setTimeout(() => {
-      isDetecting.value = false
-      detectionComplete.value = true
+      isDetecting.value = false;
+      detectionComplete.value = true;
 
       setTimeout(() => {
-        detectionComplete.value = false
-      }, 2000)
-    }, 5000)
-  }, 100)
+        detectionComplete.value = false;
+      }, 2000);
+    }, 5000);
+  }, 100);
 }
 
 onMounted(() => {
   if (process.client) {
     setTimeout(() => {
-      startDetection()
-    }, 1000)
+      startDetection();
+    }, 1000);
 
     setInterval(() => {
-      startDetection()
-    }, 10000)
+      startDetection();
+    }, 10000);
   }
-})
+});
 </script>
 
 <template>
@@ -62,11 +62,7 @@ onMounted(() => {
           </span>
         </div>
 
-        <div
-          v-else-if="isDetecting"
-          key="detecting"
-          class="absolute flex items-center gap-1.5"
-        >
+        <div v-else-if="isDetecting" key="detecting" class="absolute flex items-center gap-1.5">
           <Loader2 class="anim-spin size-4 stroke-[4px] text-neutral-300" />
 
           <span class="text-copy-lg text-neutral tracking-wide whitespace-nowrap">
@@ -97,13 +93,13 @@ onMounted(() => {
             ? 'duration-1000'
             : i === 2
               ? 'delay-100 duration-1000'
-              : 'delay-200 duration-1000'
+              : 'delay-200 duration-1000',
         ]"
         :style="[
           `--index: ${i}`,
           isDetecting
             ? `inset: calc(var(--index) * -15px); opacity: 0`
-            : `inset: calc(var(--index) * -5px); opacity: ${0.6 - i * 0.2}`
+            : `inset: calc(var(--index) * -5px); opacity: ${0.6 - i * 0.2}`,
         ]"
       />
     </button>

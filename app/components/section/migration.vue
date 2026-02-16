@@ -23,12 +23,7 @@
                 Keep your frontend there, or bring it over. We handle full-stack apps they can't.
               </p>
               <div class="mt-3">
-                <d-button
-                  variant="secondary"
-                  size="sm"
-                >
-                  Migrate now
-                </d-button>
+                <d-button variant="secondary" size="sm"> Migrate now </d-button>
               </div>
             </div>
           </d-card>
@@ -46,12 +41,7 @@
                 Stop managing infrastructure. Get the same power with 90% less complexity.
               </p>
               <div class="mt-3">
-                <d-button
-                  variant="secondary"
-                  size="sm"
-                >
-                  Migrate now
-                </d-button>
+                <d-button variant="secondary" size="sm"> Migrate now </d-button>
               </div>
             </div>
           </d-card>
@@ -69,21 +59,13 @@
                 Remember when deployment was simple? We're bringing that feeling back, at scale.
               </p>
               <div class="mt-3">
-                <d-button
-                  variant="secondary"
-                  size="sm"
-                >
-                  Migrate now
-                </d-button>
+                <d-button variant="secondary" size="sm"> Migrate now </d-button>
               </div>
             </div>
           </d-card>
           <d-card>
             <div class="h-[180px]">
-              <img
-                src="/illustration/migrate/04.png"
-                alt="Auto Scaling"
-              />
+              <img src="/illustration/migrate/04.png" alt="Auto Scaling" />
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">From Kubernetes</p>
@@ -91,12 +73,7 @@
                 Love the power, hate the complexity? Get orchestration without the YAML.
               </p>
               <div class="mt-3">
-                <d-button
-                  variant="secondary"
-                  size="sm"
-                >
-                  Migrate now
-                </d-button>
+                <d-button variant="secondary" size="sm"> Migrate now </d-button>
               </div>
             </div>
           </d-card>

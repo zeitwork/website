@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const spread = ref(22)
-const lowDuration = ref(1000)
-const highDuration = ref(1200)
+const spread = ref(22);
+const lowDuration = ref(1000);
+const highDuration = ref(1200);
 
 function getRandomValue(min: number, max: number): number {
-  return Math.floor(Math.random() * (max - min + 1)) + min
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 </script>
 <template>
@@ -25,7 +25,7 @@ function getRandomValue(min: number, max: number): number {
           :style="[
             `--index: ${shield};`,
             'transform: scale(calc(1 - var(--index)*0.08)) translateY(calc(var(--index)*-13px))',
-            `opacity: calc(1 - var(--index) * 0.4`
+            `opacity: calc(1 - var(--index) * 0.4`,
           ]"
           class="animate-shield-stack relative origin-center"
           d="M47.166 16.8408C49.9183 14.3861 54.0817 14.3861 56.834 16.8408C67.7022 26.5347 81.447 33.0668 96.6279 35.0117C100.152 35.4632 102.832 38.3952 102.95 41.9404C102.983 42.9304 103 43.9244 103 44.9219C103 78.9615 83.6493 108.484 55.3496 123.183C53.2505 124.273 50.7495 124.273 48.6504 123.183C20.3507 108.484 1 78.9615 1 44.9219C1 43.9244 1.01676 42.9304 1.0498 41.9404C1.16822 38.3952 3.84832 35.4632 7.37207 35.0117C22.553 33.0668 36.2978 26.5347 47.166 16.8408Z"
@@ -70,24 +70,11 @@ function getRandomValue(min: number, max: number): number {
           width="1"
           height="1"
         >
-          <use
-            xlink:href="#pattern0_712_18644_inner"
-            transform="translate(-17.28 -29.9298)"
-          />
-          <use
-            xlink:href="#pattern0_712_18644_inner"
-            transform="translate(0 -29.9298)"
-          />
-          <use
-            xlink:href="#pattern0_712_18644_inner"
-            transform="translate(-17.28 0)"
-          />
+          <use xlink:href="#pattern0_712_18644_inner" transform="translate(-17.28 -29.9298)" />
+          <use xlink:href="#pattern0_712_18644_inner" transform="translate(0 -29.9298)" />
+          <use xlink:href="#pattern0_712_18644_inner" transform="translate(-17.28 0)" />
           <g id="pattern0_712_18644_inner">
-            <path
-              d="M18 0L0 31.1769"
-              stroke="#D4D4D4"
-              stroke-width="8"
-            />
+            <path d="M18 0L0 31.1769" stroke="#D4D4D4" stroke-width="8" />
           </g>
         </pattern>
       </defs>

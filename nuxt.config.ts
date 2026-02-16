@@ -1,4 +1,4 @@
-import tailwindcss from "@tailwindcss/vite"
+import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -7,21 +7,21 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
 
   app: {
-    head: head()
+    head: head(),
   },
 
   routeRules: {
     "/": {
-      ssr: true
+      ssr: true,
     },
     "/**": {
-      ssr: false
-    }
+      ssr: false,
+    },
   },
 
   modules: ["@nuxt/image"],
-  vite: { plugins: [tailwindcss()] }
-})
+  vite: { plugins: [tailwindcss()] },
+});
 
 function head() {
   return {
@@ -31,14 +31,14 @@ function head() {
         rel: "icon",
         type: "image/x-icon",
         href: "/favicon.png",
-        media: "(prefers-color-scheme: dark)"
+        media: "(prefers-color-scheme: dark)",
       },
       {
         rel: "icon",
         type: "image/x-icon",
         href: "/favicon-dark.png",
-        media: "(prefers-color-scheme: light)"
-      }
+        media: "(prefers-color-scheme: light)",
+      },
     ],
     meta: [
       { charset: "utf-8" },
@@ -46,7 +46,7 @@ function head() {
       {
         name: "description",
         content:
-          "Connect your repository, and every commit triggers a new deployment. If your app has a Dockerfile, Zeitwork can run it."
+          "Connect your repository, and every commit triggers a new deployment. If your app has a Dockerfile, Zeitwork can run it.",
       },
 
       // OpenGraph
@@ -54,7 +54,7 @@ function head() {
       {
         property: "og:description",
         content:
-          "Connect your repository, and every commit triggers a new deployment. If your app has a Dockerfile, Zeitwork can run it."
+          "Connect your repository, and every commit triggers a new deployment. If your app has a Dockerfile, Zeitwork can run it.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://zeitwork.com" },
@@ -64,15 +64,15 @@ function head() {
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Zeitwork - The fastest way to deploy and scale any application"
+        content: "Zeitwork - The fastest way to deploy and scale any application",
       },
       {
         name: "twitter:description",
         content:
-          "Connect your repository, and every commit triggers a new deployment. If your app has a Dockerfile, Zeitwork can run it."
+          "Connect your repository, and every commit triggers a new deployment. If your app has a Dockerfile, Zeitwork can run it.",
       },
       { name: "twitter:image", content: "https://zeitwork.com/og-image.png" },
-      { name: "twitter:site", content: "@zeitwork" }
-    ]
-  }
+      { name: "twitter:site", content: "@zeitwork" },
+    ],
+  };
 }

@@ -1,5 +1,5 @@
 <script setup>
-const { elementId, projectId } = useUnicornStudio("xMPzWbUJSJQq7Nfyb3Cu")
+const { elementId, projectId } = useUnicornStudio("xMPzWbUJSJQq7Nfyb3Cu");
 </script>
 
 <template>

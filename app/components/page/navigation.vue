@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useWindowScroll } from "@vueuse/core"
+import { useWindowScroll } from "@vueuse/core";
 
-const { y } = useWindowScroll()
+const { y } = useWindowScroll();
 
-const { links } = useSocialLinks()
+const { links } = useSocialLinks();
 
-const isScrolled = computed(() => y.value > 20)
+const isScrolled = computed(() => y.value > 20);
 </script>
 
 <template>
@@ -16,13 +16,10 @@ const isScrolled = computed(() => y.value > 20)
         :class="[
           isScrolled
             ? 'max-w-xl border-black/5 bg-white/50 shadow backdrop-blur-xl'
-            : 'max-w-4xl border-transparent bg-white/50 backdrop-blur-xl md:bg-white/0 md:backdrop-blur-none'
+            : 'max-w-4xl border-transparent bg-white/50 backdrop-blur-xl md:bg-white/0 md:backdrop-blur-none',
         ]"
       >
-        <NuxtLink
-          to="/"
-          class="p-2"
-        >
+        <NuxtLink to="/" class="p-2">
           <d-logo class="text-black" />
         </NuxtLink>
 

@@ -27,10 +27,7 @@
           </d-card>
           <d-card>
             <div class="h-[180px]">
-              <img
-                src="/illustration/architecture/02.png"
-                alt="Deployments"
-              />
+              <img src="/illustration/architecture/02.png" alt="Deployments" />
             </div>
             <div class="flex flex-col gap-2 p-6">
               <div class="flex items-center gap-2">
@@ -47,10 +44,7 @@
           </d-card>
           <d-card>
             <div class="h-[180px]">
-              <img
-                src="/illustration/architecture/03.png"
-                alt="Detecting Setup"
-              />
+              <img src="/illustration/architecture/03.png" alt="Detecting Setup" />
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Intelligent Auto-Scaling</p>
@@ -62,10 +56,7 @@
           </d-card>
           <d-card>
             <div class="h-[180px]">
-              <img
-                src="/illustration/architecture/04.png"
-                alt="Auto Scaling"
-              />
+              <img src="/illustration/architecture/04.png" alt="Auto Scaling" />
             </div>
             <div class="flex flex-col gap-2 p-6">
               <p class="text-copy-lg text-neutral">Edge-Native Networking</p>

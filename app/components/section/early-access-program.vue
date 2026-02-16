@@ -32,12 +32,7 @@
                 <d-check>Builders who value simplicity and power</d-check>
               </div>
               <div class="mt-3">
-                <d-button
-                  variant="secondary"
-                  size="sm"
-                >
-                  Migrate now
-                </d-button>
+                <d-button variant="secondary" size="sm"> Migrate now </d-button>
               </div>
             </div>
           </d-card>

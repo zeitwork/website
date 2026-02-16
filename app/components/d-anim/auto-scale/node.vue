@@ -1,15 +1,15 @@
 <script setup lang="ts">
 type Props = {
-  height: number
-}
+  height: number;
+};
 
-const { height } = defineProps<Props>()
+const { height } = defineProps<Props>();
 
 const colorClass = computed(() => {
-  if (height > 70) return "bg-orange-500"
-  if (height > 30) return "bg-green-500"
-  return "bg-neutral-200"
-})
+  if (height > 70) return "bg-orange-500";
+  if (height > 30) return "bg-green-500";
+  return "bg-neutral-200";
+});
 </script>
 <template>
   <div

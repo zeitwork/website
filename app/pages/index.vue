@@ -6,12 +6,12 @@ useHead({
           {
             defer: true,
             "data-domain": "zeitwork.com",
-            src: "https://plausible.io/js/script.js"
-          }
+            src: "https://plausible.io/js/script.js",
+          },
         ]
-      : [])
-  ]
-})
+      : []),
+  ],
+});
 </script>
 
 <template>

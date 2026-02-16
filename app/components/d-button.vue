@@ -1,27 +1,27 @@
 <script setup lang="ts">
-import { NuxtLink } from "#components"
+import { NuxtLink } from "#components";
 
 type Props = {
-  variant: "primary" | "secondary"
-  size: "sm" | "md"
-  to?: string
-}
+  variant: "primary" | "secondary";
+  size: "sm" | "md";
+  to?: string;
+};
 
-const { variant = "primary", to, size = "md" } = defineProps<Props>()
+const { variant = "primary", to, size = "md" } = defineProps<Props>();
 
 const variantClasses = {
   primary: "bg-surface-inverse text-neutral-onsurface hover:bg-surface-inverse-subtle",
-  secondary: "bg-surface-subtle hover:bg-neutral-strong text-neutral"
-}
+  secondary: "bg-surface-subtle hover:bg-neutral-strong text-neutral",
+};
 
 const sizeClasses = {
   sm: "h-9 px-4",
-  md: "h-12 px-5"
-}
+  md: "h-12 px-5",
+};
 
 const comp = computed(() => {
-  return to ? NuxtLink : "button"
-})
+  return to ? NuxtLink : "button";
+});
 </script>
 <template>
   <component

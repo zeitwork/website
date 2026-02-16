@@ -1,31 +1,19 @@
 <template>
-  <svg
-    width="94"
-    height="14"
-    viewBox="0 0 94 14"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg width="94" height="14" viewBox="0 0 94 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M2.74909e-07 7C3.82087 7 6.91831 3.86599 6.91831 0H2.74909e-07V7Z"
       fill="currentColor"
     />
-    <path
-      d="M13.8366 0H6.91831L6.9183 7L13.8366 0Z"
-      fill="currentColor"
-    />
+    <path d="M13.8366 0H6.91831L6.9183 7L13.8366 0Z" fill="currentColor" />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M13.8366 7C10.0157 7 6.9183 10.134 6.9183 14H13.8366V7Z"
       fill="currentColor"
     />
-    <path
-      d="M0 14H6.9183V7L0 14Z"
-      fill="currentColor"
-    />
+    <path d="M0 14H6.9183V7L0 14Z" fill="currentColor" />
     <path
       d="M29.9096 13.6111H20.5385V11.466L26.97 2.56108H20.681V0.434H29.8027V2.48898L23.3178 11.484H29.9096V13.6111Z"
       fill="currentColor"

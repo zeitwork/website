@@ -1,13 +1,10 @@
 <script setup lang="ts">
-const { links } = useSocialLinks()
+const { links } = useSocialLinks();
 </script>
 <template>
   <d-wrapper>
     <div class="flex items-center justify-between gap-1 py-8">
-      <NuxtLink
-        to="/"
-        class="p-2"
-      >
+      <NuxtLink to="/" class="p-2">
         <d-logo class="text-neutral-subtle" />
       </NuxtLink>
       <div class="flex items-center gap-1">

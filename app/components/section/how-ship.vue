@@ -3,21 +3,21 @@ const tabs = [
   {
     title: "Connect your repository",
     description:
-      "Link your GitHub repo with a single click. We'll detect your framework automatically."
+      "Link your GitHub repo with a single click. We'll detect your framework automatically.",
   },
   {
     title: "Push your code",
     description:
-      "Every push to main deploys globally. Branch previews and one-click rollbacks included."
+      "Every push to main deploys globally. Branch previews and one-click rollbacks included.",
   },
   {
     title: "Automatic scaling",
     description:
-      "We monitor your app and scale horizontally based on real usage. Your instances are always running."
-  }
-]
+      "We monitor your app and scale horizontally based on real usage. Your instances are always running.",
+  },
+];
 
-const activeTab = ref(0)
+const activeTab = ref(0);
 </script>
 <template>
   <div class="py-20 md:py-32">

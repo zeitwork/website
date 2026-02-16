@@ -1,54 +1,54 @@
 <script setup lang="ts">
-import { GitMerge, GitCommitHorizontal, MoreHorizontal, Loader2Icon } from "lucide-vue-next"
+import { GitMerge, GitCommitHorizontal, MoreHorizontal, Loader2Icon } from "lucide-vue-next";
 
 type Props = {
-  id: string
-  env: string
-  state: "building" | "ready"
-  branch: string
-  commit: string
-  commitMessage: string
-}
+  id: string;
+  env: string;
+  state: "building" | "ready";
+  branch: string;
+  commit: string;
+  commitMessage: string;
+};
 
 const {
   id = "EjnklDbk2",
   env = "Production",
   branch = "main",
-  state = "building"
-} = defineProps<Props>()
+  state = "building",
+} = defineProps<Props>();
 
-const timer = ref(0)
-let intervalId: NodeJS.Timeout | null = null
+const timer = ref(0);
+let intervalId: NodeJS.Timeout | null = null;
 
-const mounted = ref(false)
+const mounted = ref(false);
 
 onMounted(() => {
-  if (!process.client) return
+  if (!process.client) return;
 
   if (state === "building") {
-    timer.value = 0
+    timer.value = 0;
     intervalId = setInterval(() => {
-      timer.value += 1
-    }, 1000)
+      timer.value += 1;
+    }, 1000);
   }
-})
+});
 
 watch(
   () => state,
   (newState) => {
     if (newState === "ready" && intervalId) {
-      clearInterval(intervalId)
-      intervalId = null
+      clearInterval(intervalId);
+      intervalId = null;
     }
-  }
-)
+  },
+);
 
 onBeforeUnmount(() => {
   if (intervalId) {
-    clearInterval(intervalId)
-    intervalId = null
+    clearInterval(intervalId);
+    intervalId = null;
   }
-})
+});
 </script>
 <template>
   <div
@@ -63,17 +63,11 @@ onBeforeUnmount(() => {
 
     <!-- Status and Time -->
     <div class="flex w-[120px] flex-col gap-0.5">
-      <div
-        v-if="state === 'ready'"
-        class="text-neutral flex items-center gap-1.5"
-      >
+      <div v-if="state === 'ready'" class="text-neutral flex items-center gap-1.5">
         <div class="size-2.5 rounded-full bg-green-500"></div>
         <p class="text-copy">Ready</p>
       </div>
-      <div
-        v-else="state === 'building'"
-        class="text-neutral flex items-center gap-1.5"
-      >
+      <div v-else="state === 'building'" class="text-neutral flex items-center gap-1.5">
         <div class="size-2.5 rounded-full bg-amber-500"></div>
         <p class="text-copy">Building</p>
       </div>
@@ -88,12 +82,7 @@ onBeforeUnmount(() => {
             </span>
             <span>{{ timer }}s</span>
           </p>
-          <p
-            v-else
-            class="text-copy text-neutral-subtle absolute"
-          >
-            {{ timer }}s (now)
-          </p>
+          <p v-else class="text-copy text-neutral-subtle absolute">{{ timer }}s (now)</p>
         </Transition>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CheckCircleIcon } from "@heroicons/vue/16/solid"
+import { CheckCircleIcon } from "@heroicons/vue/16/solid";
 </script>
 <template>
   <div class="flex items-center gap-2">

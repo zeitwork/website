@@ -1,55 +1,52 @@
 <script setup lang="ts">
 type Props = {
-  center?: boolean
-}
+  center?: boolean;
+};
 
-const { center } = defineProps<Props>()
+const { center } = defineProps<Props>();
 
-import { CheckCircleIcon, XCircleIcon } from "@heroicons/vue/16/solid"
-const email = ref("")
-const isSuccess = ref<boolean | null>(null)
-const responseMessage = ref("")
-let timeoutId: NodeJS.Timeout | null = null
+import { CheckCircleIcon, XCircleIcon } from "@heroicons/vue/16/solid";
+const email = ref("");
+const isSuccess = ref<boolean | null>(null);
+const responseMessage = ref("");
+let timeoutId: NodeJS.Timeout | null = null;
 
-const { data: waitlistInfo } = await useFetch("/api/waitlist")
+const { data: waitlistInfo } = await useFetch("/api/waitlist");
 
-const waitlistCount = computed(() => waitlistInfo.value?.count ?? 0)
+const waitlistCount = computed(() => waitlistInfo.value?.count ?? 0);
 
 async function handleSubmit() {
-  console.log("handleSubmit", email.value)
-  if (!email.value) return
+  console.log("handleSubmit", email.value);
+  if (!email.value) return;
 
   try {
     const res = await $fetch("/api/waitlist", {
       method: "POST",
       body: {
-        email: email.value
-      }
-    })
+        email: email.value,
+      },
+    });
     if (res.success) {
-      email.value = ""
-      responseMessage.value = "You're on the waitlist!"
-      isSuccess.value = true
+      email.value = "";
+      responseMessage.value = "You're on the waitlist!";
+      isSuccess.value = true;
     }
   } catch (error) {
-    console.error(error)
-    responseMessage.value = "Something went wrong. Please try again."
-    isSuccess.value = false
+    console.error(error);
+    responseMessage.value = "Something went wrong. Please try again.";
+    isSuccess.value = false;
 
-    if (timeoutId) clearTimeout(timeoutId)
+    if (timeoutId) clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
-      responseMessage.value = ""
-      isSuccess.value = null
-    }, 5000)
+      responseMessage.value = "";
+      isSuccess.value = null;
+    }, 5000);
   }
 }
 </script>
 
 <template>
-  <form
-    @submit.prevent="handleSubmit"
-    class="flex flex-col gap-2 sm:inline-flex"
-  >
+  <form @submit.prevent="handleSubmit" class="flex flex-col gap-2 sm:inline-flex">
     <div
       class="flex gap-2 rounded-full bg-white/10 p-1 ring-[4px] ring-black/[0.02] backdrop-blur transition-all hover:bg-white/30 hover:ring-black/[0.04] has-focus-visible:bg-white/50 has-focus-visible:ring-[6px] has-focus-visible:ring-black/[0.06] sm:inline-flex"
     >
@@ -61,13 +58,7 @@ async function handleSubmit() {
         placeholder="Your Email"
         class="text-copy-lg text-neutral flex min-w-0 flex-1 items-center rounded-full px-5 py-1.5 focus:outline-none"
       />
-      <d-button
-        type="submit"
-        variant="primary"
-        size="md"
-      >
-        Join Waitlist
-      </d-button>
+      <d-button type="submit" variant="primary" size="md"> Join Waitlist </d-button>
     </div>
 
     <div class="relative">
@@ -77,18 +68,12 @@ async function handleSubmit() {
           class="absolute top-0 mt-4 flex items-center gap-2 rounded-full px-3 py-2"
           :class="[
             isSuccess ? 'bg-green-100 text-green-600' : 'bg-red-100 text-red-600',
-            center ? 'left-1/2 -translate-x-1/2' : ''
+            center ? 'left-1/2 -translate-x-1/2' : '',
           ]"
         >
           <div>
-            <CheckCircleIcon
-              v-if="isSuccess"
-              class="size-4"
-            />
-            <XCircleIcon
-              v-else
-              class="size-4"
-            />
+            <CheckCircleIcon v-if="isSuccess" class="size-4" />
+            <XCircleIcon v-else class="size-4" />
           </div>
           <p class="text-copy font-medium whitespace-nowrap">
             {{ responseMessage }}
