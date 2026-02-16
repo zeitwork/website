@@ -1,5 +1,5 @@
 import { waitlist } from "~~/packages/database/schema";
-import { count } from "drizzle-orm";
+import { count, isNotNull } from "drizzle-orm";
 
 export default defineCachedEventHandler(
   async (event) => {
@@ -9,6 +9,7 @@ export default defineCachedEventHandler(
           sum: count(waitlist.id),
         })
         .from(waitlist);
+      // .where(isNotNull(waitlist.confirmedAt));
 
       return {
         count: result.sum ?? 0,
@@ -21,5 +22,5 @@ export default defineCachedEventHandler(
       );
     }
   },
-  { maxAge: 60 /* 1 minute */ },
+  { maxAge: 60 /* 1 minute */, staleMaxAge: -1 },
 );

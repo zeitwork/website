@@ -28,7 +28,7 @@ async function handleSubmit() {
     });
     if (res.success) {
       email.value = "";
-      responseMessage.value = "You're on the waitlist!";
+      responseMessage.value = "Check your email to confirm!";
       isSuccess.value = true;
     }
   } catch (error) {
